@@ -24,7 +24,7 @@ const Form = ({ pagos, setPagos }) => {
 
   return (
     <div className="p-3 mx-auto h-auto">
-        <h2 className="mb-5 text-center text-xl font-semibold">Servicios</h2>
+        <h2 className="mb-5 text-left text-xl font-semibold">Servicios</h2>
             <form 
               onSubmit={handleSubmit} 
               className="bg-gray-200 shadow-lg rounded-md border border-black py-4 px-3 flex flex-col gap-4 "

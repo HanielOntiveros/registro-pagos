@@ -7,12 +7,13 @@ export const Historial = ({ pagos }) => {
 
 }
   return (
-    <div className="mt-4 mx-auto flex justify-center" >
-        <table className="w-full mx-3 border-black text-center "> 
+    <div className="p-3 mt-4 mx-auto flex flex-col align-middle justify-center " >
+      <h2 className="mb-3 text-xl font-semibold ">Historial de pagos </h2>
+        <table className="w-full border-black text-center "> 
             <tr className="text-left ">
-                <th className="border border-black text-center p-2">Servicio</th>
-                <th className="border border-black text-center p-2">Monto</th>
-                <th className="border border-black text-center p-2">Fecha</th>
+                <th className="border border-black text-center font-medium p-2">Servicio</th>
+                <th className="border border-black text-center font-medium p-2">Monto</th>
+                <th className="border border-black text-center font-medium p-2">Fecha</th>
             </tr>
                 {pagos.map(pago => (
                          <tr 
