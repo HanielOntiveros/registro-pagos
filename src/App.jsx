@@ -13,6 +13,7 @@ function App() {
     setPagos([])
   }
 
+  
   return (
     <div className='pb-2 h-full w-auto bg-slate-200'>
       <h1 className="mb-3 pt-3 text-3xl font-bold text-center">Registro de pagos</h1>

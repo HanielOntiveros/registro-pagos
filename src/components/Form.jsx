@@ -12,7 +12,12 @@ const Form = ({ pagos, setPagos }) => {
     
     return random + fecha
   }
-
+  
+  const today = new Date()
+  const day = JSON.stringify(today.getDate())
+  const month = JSON.stringify(today.getMonth() + 1)
+  const year = JSON.stringify(today.getFullYear())
+  console.log(day,month,year);
   
 
   const handleSubmit = (e) => {
@@ -50,6 +55,7 @@ const Form = ({ pagos, setPagos }) => {
                 <input 
                   className="p-1 w-auto text-md text-center border border-gray-400 rounded-md"
                   type="date" 
+                  max={`${year}-${month}-${day}`}
                   required
                   value={fecha}
                   onChange={e=>setFecha(e.target.value)}

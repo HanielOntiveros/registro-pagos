@@ -3,9 +3,9 @@ export const Historial = ({ pagos }) => {
     return cantidad.toLocaleString('en-US', { 
         style : 'currency',
         currency: 'USD'
-    })
+    })}
 
-}
+  
   return (
     <div className="p-3 mt-4 mx-auto flex flex-col align-middle justify-center " >
       <h2 className="mb-3 text-xl font-semibold ">Historial de pagos </h2>
